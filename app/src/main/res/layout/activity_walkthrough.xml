@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/WalkLayout"
+    android:layout_height="match_parent"
+    tools:context=".WalkthroughActivity">
+
+  <androidx.viewpager.widget.ViewPager
+      android:id="@+id/Slide_viewPager"
+      android:layout_width="match_parent"
+      android:layout_height="522dp"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentLeft="true"></androidx.viewpager.widget.ViewPager>
+
+  <LinearLayout
+      android:id="@+id/Dot_layout"
+      android:layout_width="79dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/Slide_viewPager"
+      android:layout_centerHorizontal="true"
+      android:gravity="center"
+      android:orientation="horizontal"
+      android:padding="20dp"></LinearLayout>
+
+
+
+  <TextView
+      android:visibility="invisible"
+      android:id="@+id/Terms"
+      android:drawableTop="@drawable/ic_arrow_down"
+      android:textSize="17dp"
+      android:drawableTint="@color/colorPrimary"
+      android:textStyle="bold"
+      android:layout_width="wrap_content"
+      android:text=" Terms and Conditions"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="115dp"
+      android:textColor="@color/colorAccent"
+      android:layout_height="wrap_content"/>
+
+
+  <CheckBox
+      android:visibility="invisible"
+      android:id="@+id/Check_terms"
+      android:layout_width="wrap_content"
+      android:text="I Agree to Terms and Conditions"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="80dp"
+      android:textColor="@color/colorAccent"
+      android:layout_height="wrap_content"/>
+
+
+
+  <Button
+      android:id="@+id/get_Started"
+      android:layout_width="180dp"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="98dp"
+      android:text=" Get Started "
+      android:visibility="invisible"
+      android:background="@drawable/btngradient"
+      android:textColor="#fcfcfc"
+      />
+
+
+  <Button
+      android:id="@+id/Back"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentStart="true"
+      android:visibility="invisible"
+      android:background="@color/Transparent"
+      android:textColor="@color/colorAccent"
+      android:text="Back"
+      android:layout_alignParentLeft="true" />
+
+  <Button
+      android:id="@+id/Next"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentEnd="true"
+      android:background="@color/Transparent"
+      android:textColor="@color/colorAccent"
+      android:text="Swipe >>"
+      android:layout_alignParentRight="true" />
+
+
+
+</RelativeLayout>

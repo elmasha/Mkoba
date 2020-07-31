@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegActivity">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/logbg"
+        android:layout_height="match_parent">
+
+
+
+      <TextView
+          android:id="@+id/Label_gas11"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/colorAccent"
+          android:layout_marginTop="40dp"
+          android:textSize="30sp"
+          android:text="Registration"
+          android:layout_centerHorizontal="true"
+          android:textStyle="bold"
+          android:layout_marginLeft="20dp" />
+
+
+
+      <TextView
+          android:id="@+id/Label_gas"
+          android:layout_width="278dp"
+          android:layout_height="wrap_content"
+          android:textColor="@color/colorGrey"
+          android:layout_marginTop="10dp"
+          android:textSize="16sp"
+          android:textAlignment="center"
+          android:layout_centerHorizontal="true"
+          android:layout_below="@id/Label_gas11"
+          android:text="Register now and begin making payment with Mkoba"
+          android:layout_marginStart="20dp"
+          android:layout_marginLeft="20dp" />
+
+
+
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_width="300dp"
+          android:layout_height="wrap_content">
+
+
+
+      </com.google.android.material.textfield.TextInputLayout>
+
+
+      <EditText
+          android:id="@+id/Client_FirstName"
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"
+          android:hint=" Fist Name"
+          android:layout_below="@id/Label_gas"
+          android:inputType="text"
+          android:layout_centerHorizontal="true"
+          android:drawableLeft="@drawable/ic_person"
+          android:drawableTint="@color/colorPurple"
+          android:background="@drawable/circle_borderblue"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="15dp"
+          android:layout_marginLeft="10dp" />
+
+      <EditText
+          android:id="@+id/Client_LastName"
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"
+          android:hint="Last Name"
+          android:layout_centerHorizontal="true"
+          android:layout_marginStart="10dp"
+          android:background="@drawable/circle_borderblue"
+          android:layout_below="@id/Client_FirstName"
+          android:inputType="text"
+          android:layout_marginTop="15dp"
+           />
+
+      <EditText
+          android:id="@+id/Client_Id_No"
+          android:layout_width="300dp"
+          android:layout_marginStart="10dp"
+          android:layout_height="wrap_content"
+          android:hint=" ID no."
+          android:layout_centerHorizontal="true"
+          android:background="@drawable/circle_borderblue"
+          android:layout_below="@id/Client_LastName"
+          android:inputType="number"
+          android:drawableLeft="@drawable/ic_id"
+          android:drawableTint="@color/colorPurple"
+          android:layout_marginTop="15dp"
+          android:layout_marginLeft="10dp" />
+
+      <EditText
+          android:id="@+id/Client_Phone_number"
+          android:layout_below="@+id/Client_Id_No"
+          android:layout_width="300dp"
+          android:background="@drawable/circle_borderblue"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:layout_marginStart="10dp"
+          android:hint=" Phone Number"
+          android:drawableLeft="@drawable/ic_phone"
+          android:drawableTint="@color/colorPurple"
+          android:inputType="number"
+          android:layout_marginTop="15dp"
+
+          android:layout_marginLeft="10dp" />
+
+
+
+
+      <AutoCompleteTextView
+          android:id="@+id/Client_Location"
+          android:layout_below="@+id/Client_Phone_number"
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"
+          android:background="@drawable/circle_bordergreyp"
+          android:hint="Enter location"
+          android:layout_centerHorizontal="true"
+          android:drawableLeft="@drawable/ic_location"
+          android:drawableTint="@color/colorPurple"
+          android:layout_marginStart="10dp"
+          android:completionThreshold="1"
+          android:inputType="text"
+          android:layout_marginTop="15dp"
+
+          android:layout_marginLeft="10dp" />
+
+
+
+      <EditText
+          android:id="@+id/Client_Email"
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"
+          android:hint=" Enter Email"
+          android:layout_below="@id/Client_Location"
+          android:background="@drawable/circle_bordergreyp"
+          android:inputType="textEmailAddress"
+          android:layout_marginStart="10dp"
+          android:layout_centerHorizontal="true"
+          android:drawableLeft="@drawable/ic_mail"
+          android:drawableTint="@color/colorPurple"
+          android:layout_marginTop="15dp"
+          android:layout_marginLeft="10dp" />
+
+      <EditText
+          android:id="@+id/Client_Password"
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"
+          android:hint=" Password"
+          android:background="@drawable/circle_border"
+          android:layout_marginStart="20dp"
+          android:layout_below="@id/Client_Email"
+          android:layout_centerHorizontal="true"
+          android:inputType="textPassword"
+          android:drawableLeft="@drawable/ic_lock"
+          android:drawableTint="@color/colorPurple"
+          android:layout_marginTop="15dp"
+          android:layout_marginLeft="20dp" />
+
+      <EditText
+          android:id="@+id/Con_Password"
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"
+          android:hint="Verify Password"
+          android:layout_centerHorizontal="true"
+          android:background="@drawable/circle_border"
+          android:layout_marginStart="20dp"
+          android:layout_below="@id/Client_Password"
+          android:inputType="textPassword"
+          android:layout_marginTop="15dp"
+          android:layout_marginLeft="20dp" />
+
+
+      <Button
+          android:id="@+id/Client_Submit"
+          android:layout_width="190dp"
+          android:layout_below="@id/Con_Password"
+          android:layout_height="match_parent"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="30dp"
+          android:text="Register"
+          android:textAllCaps="false"
+          android:textSize="17dp"
+          android:textStyle="bold"
+          android:background="@drawable/btngradient"
+          android:textColor="#fcfcfcfc"/>
+
+      <com.github.ybq.android.spinkit.SpinKitView
+          android:id="@+id/Progress12"
+          android:layout_width="80dp"
+          android:layout_below="@id/Con_Password"
+          android:layout_height="80dp"
+          android:visibility="invisible"
+          app:SpinKit_Color="@color/colorAccent"
+          style="@style/SpinKitView.ChasingDots"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="30dp"
+          />
+
+
+
+      <LinearLayout
+          android:layout_centerHorizontal="true"
+          android:orientation="horizontal"
+          android:layout_below="@id/Progress12"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/AccntDnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an Account?"
+            android:textSize="14dp"
+             />
+
+
+        <TextView
+            android:id="@+id/Client_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Log In  "
+            android:textStyle="bold"
+            android:drawableTint="@color/colorAccent"
+            android:textSize="14dp"
+            android:textColor="@color/colorAccent"
+             />
+
+
+      </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+  </ScrollView>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

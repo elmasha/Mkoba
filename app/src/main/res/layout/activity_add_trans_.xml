@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_trans_Activity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/R13"
+        android:layout_height="match_parent"
+        >
+
+
+
+        <TextView
+            android:id="@+id/New_trans"
+            android:layout_width="wrap_content"
+            android:text="New payment"
+            android:textStyle="bold"
+            android:textColor="@color/colorGrey"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            />
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Add_no"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/New_trans"
+            android:layout_marginLeft="25dp"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:hint="Recipient Number"
+                android:inputType="phone"
+                android:layout_height="wrap_content"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/ConnectUser2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ConnectUser"
+            android:text="Connect Account"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorWhite"
+            />
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/ConnectUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/New_trans"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+            app:fab_colorPressed="@color/colorPink"
+            app:fab_size="normal"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/connectusers"
+            app:fab_colorNormal="@color/colorWhite"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Add_deadline"
+            android:layout_width="300dp"
+            android:layout_below="@id/Add_no"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:hint="  Deadline"
+                android:drawableLeft="@drawable/ic_date"
+                android:inputType="date"
+                android:layout_height="wrap_content"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Add_Title"
+            android:layout_width="300dp"
+            android:layout_below="@id/Add_deadline"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:hint="Payment title"
+                android:inputType="text"
+                android:layout_height="wrap_content"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Add_description"
+            android:layout_width="300dp"
+            android:layout_below="@id/Add_Title"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:hint="Description.."
+                android:maxLines="5"
+                android:inputType="textMultiLine"
+                android:minLines="2"
+                android:gravity="top|left"
+                android:layout_height="wrap_content"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Add_amount"
+            android:layout_width="170dp"
+            android:layout_below="@id/Add_description"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="170dp"
+                android:hint="Enter Amount"
+                android:inputType="number"
+                android:text="0"
+                android:layout_height="wrap_content"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <TextView
+            android:id="@+id/Rate_amount"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:text="   0,0"
+            android:textSize="24dp"
+            android:drawableLeft="@drawable/ic_addsum"
+            android:drawableTint="@color/colorAccent"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/Add_description"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+
+
+        <TextView
+            android:id="@+id/Payment_method"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:text=" "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/Rate_amount"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+
+        <RadioGroup
+            android:id="@+id/Radio_Grp"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/Add_amount"
+            android:layout_marginStart="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp">
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:text="Buyer"
+                android:id="@+id/Buyer"
+                android:textColor="@color/colorAccent" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:text="Seller"
+                android:layout_marginTop="8dp"
+                android:id="@+id/Seller"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="12dp"
+                android:textColor="@color/colorAccent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp" />
+
+
+        </RadioGroup>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+        <Button
+            android:id="@+id/btm_Add_trans"
+            android:layout_width="220dp"
+            android:background="@drawable/btngradient"
+            android:textColor="@color/colorWhite"
+            android:text="Start"
+            android:textAllCaps="false"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/Radio_Grp"
+            android:layout_height="wrap_content"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

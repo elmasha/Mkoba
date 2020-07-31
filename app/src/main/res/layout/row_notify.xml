@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="3dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/Noti_name"
+        android:layout_width="wrap_content"
+        android:text="Mpesa payment on"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#1E2020"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:layout_below="@id/Noti_name"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/Noti_desc"
+        android:textColor="#303333"
+        android:text="My payment was completed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/Noti_dot"
+        android:background="@drawable/circle"
+        android:layout_below="@id/Noti_name"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+
+    <TextView
+        android:id="@+id/Noti_date"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/Noti_desc"
+        android:text="20/02/2020"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</RelativeLayout>

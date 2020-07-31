@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SurpportFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:id="@+id/Support_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:drawableLeft="@drawable/ic_back"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"/>
+
+
+
+        <TextView
+            android:id="@+id/Suport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Support"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="40dp"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+
+        <GridLayout
+            android:id="@+id/grid_support"
+            android:layout_below="@id/Suport"
+            android:columnCount="3"
+            android:rowCount="1"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Email_us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textAlignment="center"
+                android:drawableTop="@drawable/email"
+                android:text="Email us"
+                />
+
+            <TextView
+                android:id="@+id/Chat_us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/talk"
+                android:text="Chat with us"
+                android:textAlignment="center"
+                android:layout_margin="20dp"
+                />
+
+            <TextView
+                android:id="@+id/Call_us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/call"
+                android:layout_margin="20dp"
+                android:textAlignment="center"
+                android:text="Talk to us"
+                />
+
+
+
+        </GridLayout>
+
+
+        <View
+            android:id="@+id/v_Sp"
+            android:layout_width="340dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btngradient"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/grid_support"
+            android:layout_height="6dp"/>
+
+        <TextView
+            android:id="@+id/rodService"
+            android:layout_width="wrap_content"
+            android:text="Road Service"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:layout_below="@id/v_Sp"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/FAQ_ss"
+            android:layout_width="wrap_content"
+            android:text="FAQ's"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/rodService"
+            android:layout_marginStart="30dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/terms_condition"
+            android:layout_marginStart="30dp"
+            android:layout_below="@id/FAQ_ss"
+            android:text="Terms and Condition"
+            android:layout_marginTop="20dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_below="@id/terms_condition"
+            android:id="@+id/Privacy_policy"
+            android:text="Privacy and Policy"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

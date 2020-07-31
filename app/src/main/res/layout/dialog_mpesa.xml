@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mpesa"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/Mpesa_name"
+        android:layout_width="300dp"
+        android:hint="Enter name"
+        android:layout_below="@id/pay"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/Mpesa_number"
+        android:layout_width="300dp"
+        android:hint="Phone number"
+        android:layout_below="@id/Mpesa_name"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="300dp"
+        android:hint="Amount"
+        android:layout_below="@id/Mpesa_number"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/confirm_stk"
+        android:layout_width="250dp"
+        android:layout_below="@id/amount"
+        android:background="@drawable/btngradient"
+        android:textColor="#fcfcfc"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Confirm"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

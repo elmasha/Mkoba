@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    tools:context=".PayMethodActivity">
+
+
+  <TextView
+      android:id="@+id/PayM_Back"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_marginStart="12dp"
+      android:drawableLeft="@drawable/ic_back"/>
+
+
+  <TextView
+        android:id="@+id/Label_pay"
+        android:layout_marginTop="15dp"
+        android:textSize="19dp"
+        android:drawableTint="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mkoba payments"/>
+
+
+
+  <com.google.android.material.tabs.TabLayout
+      android:id="@+id/tab_layout"
+      android:layout_width="match_parent"
+      android:layout_marginTop="30dp"
+      android:layout_height="50dp"
+      app:tabMode="scrollable"
+      app:tabBackground="@color/colorWhite"
+      android:layout_below="@id/Label_pay"
+      app:tabSelectedTextColor="@color/colorPrimary"
+      app:tabTextColor="@color/colorGrey">
+
+    <com.google.android.material.tabs.TabItem
+        android:id="@+id/Create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_add_pay"
+        android:layout_margin="10dp"
+        android:text="create payment" />
+
+    <com.google.android.material.tabs.TabItem
+        android:id="@+id/Pending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:icon="@drawable/ic_pending"
+        android:text="Pending payment" />
+
+
+    <com.google.android.material.tabs.TabItem
+       android:id="@+id/Past"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:icon="@drawable/ic_past"
+        android:text="Past payment" />
+
+
+  </com.google.android.material.tabs.TabLayout>
+
+
+
+  <androidx.viewpager.widget.ViewPager
+      android:id="@+id/ViewPager12"
+      android:layout_below="@id/tab_layout"
+      android:layout_marginTop="8dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+
+  </androidx.viewpager.widget.ViewPager>
+
+
+
+</RelativeLayout>
+
+

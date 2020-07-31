@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity">
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/logbg"
+        android:layout_height="match_parent">
+
+
+
+      <TextView
+          android:id="@+id/LogILable1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/colorAccent"
+          android:layout_marginTop="150dp"
+          android:textSize="30sp"
+          android:text="Welcome Back!"
+          android:layout_centerHorizontal="true"
+          android:textStyle="bold"
+          android:layout_marginLeft="20dp" />
+
+
+
+      <TextView
+          android:id="@+id/LogILable"
+          android:layout_width="wrap_content"
+          android:layout_below="@id/LogILable1"
+          android:layout_height="wrap_content"
+          android:textColor="@color/colorGrey"
+          android:layout_marginTop="30dp"
+          android:textSize="17sp"
+          android:text="Log back into your account."
+          android:layout_centerHorizontal="true"
+          android:layout_marginLeft="20dp" />
+
+
+
+
+
+
+      <EditText
+          android:id="@+id/Login_Email"
+          android:layout_width="280dp"
+          android:layout_height="wrap_content"
+          android:hint="  Enter Email"
+          android:layout_below="@id/LogILable"
+          android:layout_centerHorizontal="true"
+          android:background="@drawable/circle_bordergreyp"
+          android:inputType="textEmailAddress"
+          android:drawableLeft="@drawable/ic_mail"
+          android:drawableTint="@color/colorPurple"
+          android:layout_marginStart="20dp"
+          android:layout_marginTop="30dp"
+          android:layout_marginLeft="20dp" />
+
+      <EditText
+          android:id="@+id/Login_Password"
+          android:layout_width="280dp"
+          android:layout_height="wrap_content"
+          android:hint=" Password"
+          android:drawableLeft="@drawable/ic_lock"
+          android:drawableTint="@color/colorPurple"
+          android:layout_centerHorizontal="true"
+          android:background="@drawable/circle_border"
+          android:layout_marginStart="20dp"
+          android:layout_below="@id/Login_Email"
+          android:inputType="textPassword"
+          android:layout_marginTop="35dp"
+          android:layout_marginLeft="20dp" />
+
+
+
+
+      <Button
+          android:id="@+id/Login_Submit"
+          android:layout_width="230dp"
+          android:layout_below="@id/Login_Password"
+          android:layout_height="match_parent"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="50dp"
+          android:text="Log In"
+          android:textAllCaps="false"
+          android:textStyle="bold"
+          android:textSize="18dp"
+          android:background="@drawable/btngradient"
+          android:textColor="#fcfcfcfc"/>
+
+      <com.github.ybq.android.spinkit.SpinKitView
+          android:id="@+id/Progress112"
+          android:layout_width="80dp"
+          android:layout_below="@id/Login_Password"
+          android:layout_height="80dp"
+          android:visibility="invisible"
+          app:SpinKit_Color="@color/colorAccent"
+          style="@style/SpinKitView.ChasingDots"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="30dp"
+          />
+
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="wrap_content"
+          android:layout_below="@id/Progress112"
+          android:layout_marginTop="20dp"
+          android:layout_centerHorizontal="true"
+          android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/AccntDnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dont have an Account?"
+            android:textSize="14dp"
+            android:layout_below="@id/Login_Submit"
+            />
+
+
+        <TextView
+            android:id="@+id/Client_Reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Create new  "
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:textColor="@color/colorAccent"
+            android:layout_below="@id/Login_Submit"
+            />
+
+      </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

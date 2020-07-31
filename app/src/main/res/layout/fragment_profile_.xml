@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/LayoutProfile"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#EEF0F0"
+    android:layout_height="match_parent"
+    tools:context=".Profile_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Card_Profile"
+            android:layout_width="330dp"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="10dp"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/cardgradient"
+                android:layout_height="wrap_content">
+
+
+                <!--            <TextView-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_margin="10dp"-->
+                <!--                android:textStyle="bold"-->
+                <!--                android:drawableTint="@color/colorGrey"-->
+                <!--                android:text="Notification"-->
+                <!--                android:drawableTop="@drawable/ic_notifications"/>-->
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/Profile_img"
+                    android:layout_width="80dp"
+                    android:src="@drawable/user_profile"
+                    android:layout_marginTop="12dp"
+
+                    app:civ_border_color="@color/colorPrimary"
+                    android:layout_marginBottom="20dp"
+                    app:civ_border_width="3dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp" />
+
+
+                <TextView
+                    android:id="@+id/Profile_name"
+                    android:layout_width="wrap_content"
+                    android:text="Elmasha Omondi"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginStart="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="100dp" />
+
+                <TextView
+                    android:id="@+id/Mkoba_ID"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/Profile_name"
+                    android:layout_centerHorizontal="true"
+                    android:text="404....!"
+                    android:textSize="14dp"
+                    android:visibility="visible"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp" />
+
+
+
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/Mkoba_ID"
+                    android:layout_centerHorizontal="true"
+                    android:text="404....!"
+                    android:textSize="14dp"
+                    android:visibility="visible"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp" />
+
+
+
+                <TextView
+                    android:id="@+id/Logout"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Log Out"
+                    android:padding="3dp"
+                    android:textSize="14dp"
+                    android:drawableTint="@color/colorWhite"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:drawableTop="@drawable/logout"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    />
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/Layout5"
+            android:padding="3dp"
+            android:layout_below="@id/Card_Profile"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_width="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:id="@+id/Amount12"
+                android:layout_width="wrap_content"
+                android:text="10,000"
+                android:textStyle="bold"
+                android:layout_below="@id/balance_label"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPurple"
+                android:textSize="30dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                />
+
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/Progress_Dbounce"
+                style="@style/SpinKitView.DoubleBounce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/balance_label"
+                android:layout_marginTop="8dp"
+                android:visibility="invisible"
+                app:SpinKit_Color="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/Amount_label"
+                android:layout_width="wrap_content"
+                android:text="ksh"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/Progress_Dbounce"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPurple"
+                android:layout_marginStart="8dp"
+                android:textSize="18dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp" />
+
+
+            <TextView
+                android:id="@+id/balance_label"
+                android:layout_width="wrap_content"
+                android:text="MKoba balance"
+                android:layout_margin="6dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp" />
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@id/Card_Profile"
+            android:id="@+id/Layout6"
+            app:cardCornerRadius="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:padding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <!--            <TextView-->
+                <!--                android:id="@+id/Boost"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_margin="15dp"-->
+                <!--                android:text="Boost balance"-->
+                <!--                android:textStyle="bold"-->
+                <!--                android:textColor="@color/colorGrey"-->
+                <!--            android:drawableTop="@drawable/boostba"/>-->
+
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/CreatePay"
+                    android:layout_marginBottom="10dp"
+                    android:text="Create payment"
+                    android:textColor="@color/colorGrey"
+                    android:drawableTop="@drawable/createpay"/>
+            </RelativeLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        app:tabMode="scrollable"
+        android:layout_below="@id/Layout6"
+        app:tabGravity="center"
+        app:tabBackground="@color/colorGrey2"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextColor="@color/colorGrey">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/My_tarnstab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="My payments" />
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Connect_transtab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Received payments" />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/ViewPager122"
+        android:layout_below="@id/tab_layout2"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

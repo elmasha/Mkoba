@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connect payments"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textSize="21dp"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/LabeL_pay"
+            />
+
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="This payment will be connected to the user below"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/LabeL_pay"
+            android:textSize="16dp"
+            android:textColor="@color/colorGrey"
+            android:id="@+id/LabeL_pay1"
+            />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/trans_image"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/LabeL_pay1"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/user_profile"
+            android:layout_marginTop="13dp"/>
+
+
+        <TextView
+            android:id="@+id/trans_name"
+            android:layout_below="@id/trans_image"
+            android:layout_width="wrap_content"
+            android:text="Elmasha Omondi"
+            android:textColor="#042525"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/trans_number"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="070765950"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/trans_name"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/cancel_trans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/trans_number"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="35dp"
+            android:text="Cancel"
+            android:textColor="@color/colorGrey"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/confirm_trans"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_width="170dp"
+            android:layout_marginBottom="22dp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:textSize="23dp"
+            android:textAllCaps="false"
+            android:layout_below="@id/trans_number"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/btngradient"
+            android:layout_height="wrap_content"
+            android:text="Okay"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

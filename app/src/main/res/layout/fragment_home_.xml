@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Home_Fragment">
+
+  <!-- TODO: Update blank fragment layout -->
+  <TextView
+      android:id="@+id/Mkoba_label"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="MKoba"
+      android:textSize="23dp"
+      android:layout_margin="15dp"
+      />
+
+  <TextView
+      android:id="@+id/Home_search"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text=""
+      android:drawableLeft="@drawable/ic_search_black_24dp"
+      android:layout_alignParentEnd="true"
+      android:drawableTint="@color/colorAccent"
+      android:textSize="23dp"
+      android:layout_margin="15dp"
+      />
+
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/Categories_recyclerView"
+      android:layout_width="match_parent"
+      android:layout_below="@+id/Mkoba_label"
+      android:layout_height="60dp"/>
+
+
+  <TextView
+      android:id="@+id/Home_trending"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text=" Trending"
+      android:textStyle="bold"
+      android:drawableLeft="@drawable/ic_trending"
+      android:layout_below="@id/Categories_recyclerView"
+      android:drawableTint="@color/colorGrey"
+      android:textSize="17dp"
+      android:layout_margin="10dp"
+      />
+
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/Home_recyclerView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/Home_trending"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="5dp" />
+
+
+</RelativeLayout>

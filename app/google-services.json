@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "380532072854",
+    "firebase_url": "https://m-koba-a12b2.firebaseio.com",
+    "project_id": "m-koba-a12b2",
+    "storage_bucket": "m-koba-a12b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380532072854:android:34e597219dbc811be33db7",
+        "android_client_info": {
+          "package_name": "com.el.mkoba"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380532072854-ge0eui1sdp2ov98esjghiu2uoclqrh91.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.el.mkoba",
+            "certificate_hash": "cf52295a5ce1b0fe0f9993cddb311941bd8c2666"
+          }
+        },
+        {
+          "client_id": "380532072854-ukf9ksun0kv5pg2laq8ffcat4r62rorq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ5rzf0Jez8KCJQseJCOr8n0DPHccyzs8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "380532072854-ukf9ksun0kv5pg2laq8ffcat4r62rorq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

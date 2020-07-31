@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Mkoba</string>
+    <string name="title_activity_dash_board">DashBoardActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_notification_channel_id">El_MKOBA_CH1</string>
+    <string name="CONSUMER_KEY">gd3m1FmOy9rgH2oZ8RRGrcRXStIkHtqw</string>
+    <string name="Secret_KEY">SspIror3sJ0xDurp</string>
+</resources>

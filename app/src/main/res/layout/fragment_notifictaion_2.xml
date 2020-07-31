@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notifictaion_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/Notifyme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Notifications"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:drawableLeft="@drawable/ic_notifications"
+            android:drawableTint="@color/colorGrey"
+            android:textStyle="bold"/>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Notify_recylerview"
+            android:layout_below="@id/Notifyme"
+            android:layout_marginBottom="60dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="match_parent"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>
